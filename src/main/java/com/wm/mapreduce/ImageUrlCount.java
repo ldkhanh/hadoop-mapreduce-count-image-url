@@ -74,7 +74,7 @@ public class ImageUrlCount {
     }
 
     public static void main(String[] args) throws Exception {
-        //args = new String[]{"/Users/d0l0278/tmp_log/20191210","/Users/d0l0278/tmp_log/20191210/output"};
+        //args = new String[]{"/Users/***/tmp_log/20191210","/Users/***/tmp_log/20191210/output"};
         if (args == null || args.length < 2) throw new IllegalArgumentException("Invalid argument paths");
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "url count");
